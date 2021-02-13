@@ -107,4 +107,3 @@ function adjustVideoSize() {
 		$('#videosWrapper').find("br").remove();
 	}
 }
-

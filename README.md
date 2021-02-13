@@ -15,10 +15,9 @@ A full working demo is available at <a href="http://www.foobubble.com" target="_
 At the moment WebRTC is supported only by a limited number of browsers: Chrome, Firefox and Opera.
 
 ## How to run the code
-1. Clone the repo: `$ git clone https://github.com/lucaslouca/video-conference-webrtc.git` 
+1. Clone the repo: `$ git clone https://github.com/jpolina/MusicJam
 2. `$ cd MusicJam `
 3. `$ npm install` (you may need root access)
 4. `$ node server.js`
 5. Access the app from a WebRTC capable webbrowser through <a href="http://127.0.0.1:1337/" target="_blank">http://127.0.0.1:1337/</a>
 
-Note: If you are sitting behind a corporate proxy make sure to use `npm config set proxy http://"username:password"@proxy-server.com:8080` first.

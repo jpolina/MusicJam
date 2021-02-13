@@ -6,18 +6,23 @@
 	<meta name='description' content='WebRTC Reference App' />
 	<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'>
 	<script>var HOST_ADDRESS = '<%= hostAddress %>';</script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<script src='/socket.io/socket.io.js'></script>
 	<script src='/js/lib/adapter.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src='/js/meeting.js'></script>
 	<script src='/js/room.js'></script>
 	<link rel="stylesheet" type="text/css" href="/css/room.css" media="screen" />
-	<title>Video Conference</title>
+	<link rel="stylesheet" href = "/css/recorder.css"></link>
+	<title>Music Jam</title>
 </head>
 <header>
 	<div id="topBar"></div>
+	<span id="title">♪ MusicJam ♪</span>
 </header>
 <body>
+    <div id = background></div>
 	<div class="container">
 		<div id="videos">
 			<div id="videosWrapper">
@@ -30,39 +35,46 @@
 </body>
 
 <footer>
-<link rel="stylesheet" href="/css/metronome.css">
-  </head>
-  <body>
-  <div>
-	<section class="metronome-container">
-	  <div class="counter"></div>
-  
-	  <div class="controls">
-		<label>BPM: 
-		  <span>
-			<em class="bpm-minus"></em>
-			<input type = "range" min ="1" max = "200" value = "60" class = "bpm-input" id="myRange">
-			<span id="bpm-output"></span>
-			<em class="bpm-plus"></em>
-		  </span>
-		</label>
-		<script>
-		  var slider = document.getElementById("myRange");
-		  var output = document.getElementById("bpm-output");
-		  output.innerHTML = slider.value;
-  
-		  slider.oninput = function() {
-			output.innerHTML = this.value;
-		  }
-		</script>
-		
-		<div style="margin-bottom: 15px;">
-		<button class="play-btn">Start</button>
-	  </div>
-	</section>
-  </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js'></script><script src = '/js/metronome.js'></script>
-</body>
+	<link rel="stylesheet" href="/css/metronome.css">
+	</head>
+	<div>
+		<section class="metronome-container">
+		<div class="counter"></div>
+	
+		<div class="controls">
+			<label>BPM: 
+			<span>
+				<em class="bpm-minus"></em>
+				<input type = "range" min ="1" max = "200" value = "60" class = "bpm-input" id="myRange">
+				<span id="bpm-output"></span>
+				<em class="bpm-plus"></em>
+			</span>
+			</label>
+			<script>
+			var slider = document.getElementById("myRange");
+			var output = document.getElementById("bpm-output");
+			output.innerHTML = slider.value;
+	
+			slider.oninput = function() {
+				output.innerHTML = this.value;
+			}
+			</script>
+			
+			<div style="margin-bottom: 15px;">
+			<button class="play-btn">Start</button>
+		</div>
+		</section>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js'></script><script src = '/js/metronome.js'></script>
+    <body>
+        <p>
+            <audio id=recordedAudio></audio>
+            <button id=record>Record</button>
+            <button id=stopRecord>Stop</button>
+        </p>
+        <script src = /js/recorder.js></script>
+    </body>
+</footer>
 
 </html>
