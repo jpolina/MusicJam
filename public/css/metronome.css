@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css);
+body {
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type=range] {
+  -webkit-appearance: none !important;
+  max-height: 3px;
+  position: relative;
+  top: -3px;
+  background: rgb(255, 255, 255);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 0px;
+  border-radius: 5px;
+  background: #222;
+}
+
+.metronome-container {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin: 0px;
+  background: #2f2f2f;
+  bottom:0px;
+  left:0px;
+}
+
+.metronome-container .options-btn:hover {
+  transform: rotateZ(60deg);
+}
+.metronome-container .options-active {
+  max-height: 1000px !important;
+  padding: 15px;
+  overflow: visible !important;
+}
+.metronome-container .options {
+  max-height: 0px;
+  background: #FFF;
+  color: #333;
+  overflow: hidden;
+  transition: all 0.25s;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
+
+.metronome-container .counter .dot {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 25px 10px 10px 10px;
+  background: #FFF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.metronome-container .controls {
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+.metronome-container .controls label {
+  display: block;
+  margin-bottom: 18px;
+}
+.metronome-container .controls label span {
+  background: #FFF;
+  color: #222;
+  padding: 3px;
+  border-radius: 3px;
+}
+.metronome-container .controls input {
+  width: 30px;
+  border: 0px solid;
+  color: rgb(0, 114, 245);
+  text-align: center;
+  padding: 3px;
+}
+
+.metronome-container .controls .play-btn {
+  width:30%;
+  background: #17c400;
+  border: 0px;
+  border-radius: 5px;
+  padding: 12px;
+  transition: 0.2s;
+}
+
+#myRange {
+  -webkit-appearance: none;
+  width: 40%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}

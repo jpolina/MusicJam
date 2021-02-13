@@ -1,6 +1,6 @@
 # video-conference-webrtc
 The purpose of this project is to create a prototype of an video conference app for music students. Music students can use this app to play music together virtually, and a metronome and recording feature is included in the app. This project is built on a video conferencing app from https://github.com/lucaslouca/video-conference-webrtc.
-Complete client/server application demonstrating how to setup a video conference with multiple peers using WebRTC.
+Note: Whenever a user joins the meeting, reload the page.
 
 ## What the app does
 This sample code demonstrates a client/server architecture running on <a href="https://nodejs.org" target="_blank">Node.js</a>, that enables users to setup up a video conference. The app makes use of <a href="http://socket.io" target="_blank">Socket.IO</a> and <a href="http://www.webrtc.org" target="_blank">WebRTC</a>.
@@ -16,7 +16,7 @@ At the moment WebRTC is supported only by a limited number of browsers: Chrome, 
 
 ## How to run the code
 1. Clone the repo: `$ git clone https://github.com/lucaslouca/video-conference-webrtc.git` 
-2. `$ cd video-conference-webrtc `
+2. `$ cd MusicJam `
 3. `$ npm install` (you may need root access)
 4. `$ node server.js`
 5. Access the app from a WebRTC capable webbrowser through <a href="http://127.0.0.1:1337/" target="_blank">http://127.0.0.1:1337/</a>
