@@ -1,4 +1,4 @@
-# video-conference-webrtc
+# MusicJam
 The purpose of this project is to create a prototype of an video conference app for music students. Music students can use this app to play music together virtually, and a metronome and recording feature is included in the app. This project is built on a video conferencing app from https://github.com/lucaslouca/video-conference-webrtc.
 Note: Whenever a user joins the meeting, reload the page.
 
