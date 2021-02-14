@@ -1,6 +1,6 @@
 # MusicJam
-The purpose of this project is to create a prototype of an video conference app for music students. Music students can use this app to play music together virtually, and a metronome and recording feature is included in the app. This project is built on a video conferencing app from https://github.com/lucaslouca/video-conference-webrtc.
-Note: Whenever a user joins the meeting, reload the page.
+The purpose of this project is to create a prototype of a video conference app for music students and musicians. Music students can use this app to play music together virtually, and a metronome and audio recording feature is included in the app. This project is built on a video conferencing app from https://github.com/lucaslouca/video-conference-webrtc.
+Note: Whenever a new user joins the meeting, reload the page to show them.
 
 ## What the app does
 This sample code demonstrates a client/server architecture running on <a href="https://nodejs.org" target="_blank">Node.js</a>, that enables users to setup up a video conference. The app makes use of <a href="http://socket.io" target="_blank">Socket.IO</a> and <a href="http://www.webrtc.org" target="_blank">WebRTC</a>.
@@ -9,8 +9,6 @@ When a peer visits <a href="http://127.0.0.1:1337/" target="_blank">http://127.0
 
 Below is a screenshot of a sample room (<a href="http://127.0.0.1:1337/jk4qhh" target="_blank">http://127.0.0.1:1337/jk4qhh</a>) with four users participating in a video conference:<br>
 <img src="https://cloud.githubusercontent.com/assets/10542894/7550897/538ec66a-f674-11e4-9f52-b0f5a5b9911d.png" width="450"/>
-
-A full working demo is available at <a href="http://www.foobubble.com" target="_blank">FooBubble.com</a>.
 
 At the moment WebRTC is supported only by a limited number of browsers: Chrome, Firefox and Opera.
 
