@@ -44,7 +44,7 @@ input[type=range]::-webkit-slider-thumb {
 .metronome-container .options {
   max-height: 0px;
   background: #FFF;
-  color: #333;
+  color: rgb(32,32,32);
   overflow: hidden;
   transition: all 0.25s;
   position: absolute;

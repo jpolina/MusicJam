@@ -2,7 +2,7 @@ section{
 	max-width: 800px;
     margin:0 auto;
 	text-align: center;
-    background:#fbfbfb;
+    background:#1a1a1a;
     padding:2em;
     border-radius: 1em;
     margin-bottom:3em;
@@ -10,7 +10,7 @@ section{
 }
 
 #success {
-    background-color:#f6f6f6;
+    background-color:#313131;
     text-align: center;
 }
 
@@ -27,7 +27,7 @@ section{
 
 #room-link a {
 	text-decoration: none;
-	color:#3fba00;	
+	color:blue;	
 	outline:none;
     font-size: 1.5em;
 }

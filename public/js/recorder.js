@@ -1,6 +1,5 @@
 var audioChunks;
 var rec;
-
 record.onclick = e => {
     console.log('I was clicked')
     record.disabled = true;
