@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/lucaslouca/"
+        "url": "https://github.com/jpolina"
     },
     "keywords": [
         "webrtc",
         "videochat"
     ],
-    "author": "lucaslouca",
-    "license": "MIT",
+    "author": "jpolina",
+    "license": "",
     "dependencies": {
         "bufferutil": "^4.0.1",
         "cors": "^2.8.1",
