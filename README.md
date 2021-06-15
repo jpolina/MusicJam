@@ -2,6 +2,9 @@
 The purpose of this project is to create a prototype of a video conference app for music students and musicians. Music students can use this app to play music together virtually, and a metronome and audio recording feature is included in the app. This project is built on a video conferencing app from https://github.com/lucaslouca/video-conference-webrtc.
 Note: Whenever a new user joins the meeting, reload the page to show them.
 
+Winner of GTA Hacks Hackathon: Community theme
+[Devpost Link](https://devpost.com/software/musicjam)
+
 ## What the app does
 This sample code demonstrates a client/server architecture running on <a href="https://nodejs.org" target="_blank">Node.js</a>, that enables users to setup up a video conference. The app makes use of <a href="http://socket.io" target="_blank">Socket.IO</a> and <a href="http://www.webrtc.org" target="_blank">WebRTC</a>.
 
